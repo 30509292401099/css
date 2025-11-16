@@ -3,106 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Course Landing — Figma Rebuild</title>
-
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-
-  <link rel="stylesheet" href="styles.css">
+  <title>Positivus — Landing (Single Column)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap" role="main">
-    <header class="hero">
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="hamburger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="logo">Positivus</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero container">
       <div class="hero-left">
-        <div class="eyebrow">Let's Begins</div>
-        <h1>Let's Find The<br>Right <span class="highlight">Course</span> For<br>you</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam dignissim, sem non convallis molestie.</p>
-        <div class="cta">
-          <button class="btn primary">Register</button>
-          <button class="btn ghost"><i class="fa-solid fa-play"></i> Play Video</button>
+        <p class="subtitle">Navigating the digital landscape for success</p>
+        <h1>Make work simpler. Make people happier.</h1>
+        <p class="hero-desc">A modern product that helps teams collaborate, ship faster and deliver measurable results with clarity and speed.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn primary">Get started</a>
+          <a href="#features" class="btn ghost">Learn more</a>
         </div>
+
+        <ul class="trust-list">
+          <li><img alt="" src="Illustration.png" width='90' height='20'%3E%3Crect width='90' height='20' fill='%23e6e6e6'/%3E%3C/svg%3E" /> Trusted by 500+ teams</li>
+          <li><i class="fa-solid fa-clock"></i> 99.9% uptime</li>
+        </ul>
       </div>
 
       <div class="hero-right">
-        <div class="dot p1"></div>
-        <div class="dot p2"></div>
-        <div class="dot p3"></div>
-
-        <div class="circle-frame">
-          <img src="2c2d1a7dcbc9e6b9848ca9d08a133b3abffe46f0.png" alt="Hero person">
-        </div>
-      </div>
-    </header>
-
-    <section class="features">
-      <div class="left">
-        <div class="subhead">What we give</div>
-        <h2>What do You<br>Get From Us</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam dignissim, sem non convallis molestie.</p>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <div class="icon">👩‍🏫</div>
-          <h3>Professional Teacher</h3>
-          <p>Learn from expert instructors with years of experience.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">📜</div>
-          <h3>Course Certificate</h3>
-          <p>Get recognized with official certificates after completion.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">💡</div>
-          <h3>Interesting learning</h3>
-          <p>Engaging lessons and hands-on projects to help you grow.</p>
+        <div class="illustration">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet" class="illu-svg" aria-hidden="true">
+            <rect x="0" y="0" width="400" height="300" rx="18" fill="#fff"/>
+            <g transform="translate(24,24)">
+              <rect x="0" y="0" width="210" height="120" rx="12" fill="#f7fff5"/>
+              <rect x="0" y="138" width="160" height="72" rx="10" fill="#0b0b0b"/>
+              <rect x="170" y="32" width="120" height="48" rx="8" fill="#b7ff2a"/>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
 
-    <section class="selected">
-      <div class="visual">
-        <div class="big-circle">
-          <img src="07db5538fd425b651e9e1c1bd650a20b0c6a7cfc.png" alt="Students">
-        </div>
+    <section id="features" class="services container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-sub">Tools and integrations built for modern teams</p>
+
+      <div class="cards-grid">
+        <article class="card card--light">
+          <div class="card-head"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Search engine marketing</h3>
+          <p>Reach customers at the right time with data-driven ads.</p>
+        </article>
+
+        <article class="card card--accent">
+          <div class="card-head"><i class="fa-solid fa-puzzle-piece"></i></div>
+          <h3>Plug-and-play analytics</h3>
+          <p>Install insights and dashboards without hassle.</p>
+        </article>
+
+        <article class="card card--dark">
+          <div class="card-head"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Brand & identity</h3>
+          <p>Design systems and experiences to scale your product.</p>
+        </article>
+
+        <article class="card card--light">
+          <div class="card-head"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Email marketing</h3>
+          <p>Automations that convert and retain customers.</p>
+        </article>
+
+        <article class="card card--light">
+          <div class="card-head"><i class="fa-solid fa-cubes"></i></div>
+          <h3>Content Creation</h3>
+          <p>High-quality content aligned with your strategy.</p>
+        </article>
+
+        <article class="card card--dark">
+          <div class="card-head"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3>Paid Advertising</h3>
+          <p>Scaling campaigns with measurable ROAS.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="meta">
-        <h4>Selected Course</h4>
-        <h3>People Taking Courses</h3>
-        <p class="muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam dignissim, sem non convallis molestie.</p>
-
-        <div class="metrics">
-          <div class="metric">
-            <div class="num">6,000</div>
-            <div class="label">People Views</div>
+    <section class="case-studies container">
+      <div class="case-grid">
+        <div class="case-text">
+          <h2>Case Studies</h2>
+          <p>Real results from our clients — measurable, repeatable, reliable.</p>
+        </div>
+        <div class="case-cards">
+          <div class="case card-dark-sm">
+            <h4>Client A</h4>
+            <p>Increased conversions by 42% in 3 months.</p>
           </div>
-
-          <div class="metric">
-            <div class="num">4,000</div>
-            <div class="label">User</div>
-          </div>
-
-          <div class="metric">
-            <div class="num">100</div>
-            <div class="label">Course</div>
+          <div class="case card-dark-sm">
+            <h4>Client B</h4>
+            <p>Reduced CAC by 27% using ad optimizations.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="signup-wrap">
-      <div class="signup-bar">
-        <div class="left">Sign up to comment, edit, inspect and more.</div>
-        <div class="actions">
-          <button class="btn primary small">Sign up</button>
-          <button class="btn white small">Continue</button>
+    <section class="accordion-list container">
+      <h2 class="section-title">Our Working Process</h2>
+      <div class="accordion">
+        <details open>
+          <summary><span class="acc-number">01</span> Research & Strategy</summary>
+          <p>We analyse markets, audience and product to build a clear plan.</p>
+        </details>
+        <details>
+          <summary><span class="acc-number">02</span> Concept & Design</summary>
+          <p>Concept prototyping and UI that converts.</p>
+        </details>
+        <details>
+          <summary><span class="acc-number">03</span> Implementation</summary>
+          <p>Development, testing and deployment with best practices.</p>
+        </details>
+        <details>
+          <summary><span class="acc-number">04</span> Optimization</summary>
+          <p>Measure, iterate and refine for growth.</p>
+        </details>
+        <details>
+          <summary><span class="acc-number">05</span> Reporting</summary>
+          <p>Clear dashboards and insights for stakeholders.</p>
+        </details>
+      </div>
+    </section>
+
+
+    <section class="team container">
+      <h2 class="section-title">Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <div class="avatar"></div>
+          <h4>Jane Doe</h4>
+          <p class="muted">Product Lead</p>
+        </div>
+        <div class="member">
+          <div class="avatar"></div>
+          <h4>Mark Kim</h4>
+          <p class="muted">Design</p>
+        </div>
+        <div class="member">
+          <div class="avatar"></div>
+          <h4>Rita Singh</h4>
+          <p class="muted">Engineering</p>
+        </div>
+        <div class="member">
+          <div class="avatar"></div>
+          <h4>Omar Ali</h4>
+          <p class="muted">Growth</p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="test-cards">
+        <blockquote class="test-card">
+          <p>“Positivus transformed our workflow. We ship features faster.”</p>
+          <cite>— Product Lead, Acme</cite>
+        </blockquote>
+        <blockquote class="test-card">
+          <p>“Support is amazing — fast replies and real help.”</p>
+          <cite>— CTO, Pine</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post">
+          <label><span>Name</span><input type="text" name="name" required></label>
+          <label><span>Email</span><input type="email" name="email" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+        <div class="contact-art">
+          <svg viewBox="0 0 240 240" class="contact-deco" aria-hidden="true">
+            <circle cx="120" cy="120" r="100" fill="#f4f9f8"/>
+            <rect x="60" y="60" width="120" height="120" rx="8" fill="#b7ff2a"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="logo">Positivus</div>
+          <p class="muted">Building delightful products for teams worldwide.</p>
+        </div>
+        <div class="footer-right">
+          <div class="social">
+            <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright container"><small>© 2025 Positivus. All rights reserved.</small></div>
+    </footer>
+  </main>
 </body>
 </html>
